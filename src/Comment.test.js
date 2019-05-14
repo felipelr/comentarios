@@ -7,10 +7,10 @@ it('should render text', () => {
         comment: 'test'
     }
     const wrapper = render(<Comment c={c}/>)
-    expect(wrapper.text()).toBe('Comentário: test')
+    expect(wrapper.text()).toBe('test Enviado por: vazio')
 })
 
 it('should render empty', () => {
     const wrapper = render(<Comment />)
-    expect(wrapper.text()).toBe('Comentário: vazio')
+    expect(wrapper.text()).toBe('vazio Enviado por: vazio')
 })
